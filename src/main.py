@@ -10,11 +10,20 @@ class Adder():
     def getSum(self):
         return self.val1 + self.val2
 
+class Divider():
+    def __init__(self, val1, val2):
+        self.val1 = val1
+        self.val2 = val2
+
+    def getQuotient(self):
+        return self.val1 / self.val2
 
 if __name__ == "__main__":
     print("Starting program")
 
     adder = Adder(10, 20)
     print(adder.getSum())
+    divider = Divider(20, 2)
+    print(divider.getQuotient())
 
     print("Done with program")
